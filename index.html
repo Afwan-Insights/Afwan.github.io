@@ -4,62 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohammed Afwan | Data Analyst</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F3F3F3;
+            color: #333;
+        }
+        header {
+            background-color: #0A192F;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #8892B0;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            color: #0A192F;
+            border-bottom: 2px solid #0A192F;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: #0A192F;
+        }
+        .tags span {
+            background: #E6F0FF;
+            color: #0056D2;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #0A192F;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #112A4F;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0A192F;
+            color: white;
+            margin-top: 40px;
+        }
+        a { color: #0056D2; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+<body>
 
-    <header class="bg-slate-900 text-white py-20 px-6">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-5xl font-bold tracking-tight">Mohammed Afwan</h1>
-            <h2 class="text-2xl text-blue-400 font-semibold mt-3">Strategic Data Analyst</h2>
-            <p class="mt-6 text-lg text-slate-300 max-w-2xl leading-relaxed">
-                Translating complex datasets into actionable business intelligence. Leveraging enterprise operations experience at Deloitte and Amazon alongside advanced analytics to engineer automated data pipelines and predictive models.
-            </p>
-            <div class="mt-8 flex gap-4">
-                <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded transition">View Portfolio</a>
-                <a href="mailto:your.email@example.com" class="border border-slate-500 hover:border-white text-white font-bold py-3 px-6 rounded transition">Contact Me</a>
-            </div>
+<header>
+    <h1>Mohammed Afwan</h1>
+    <p>Data Analyst | Translating complex data into strategic business solutions using Python, SQL, and Power BI.</p>
+    <a href="mailto:afwanpathan17@gmail.com" class="btn">Contact Me</a>
+</header>
+
+<div class="container">
+    <h2 class="section-title">Professional Summary</h2>
+    <p>Data Analyst based in Hyderabad with a strong foundation in corporate operations (Deloitte, Amazon) and advanced studies in Information Technology. Proven ability to automate complex data pipelines, engineer predictive models, and design executive-facing dashboards that drive strategic decision-making.</p>
+
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="project-card">
+        <h3>AI-Driven HR Compensation Engine</h3>
+        <div class="tags">
+            <span>Python</span> <span>Power BI</span> <span>Machine Learning</span> <span>DAX</span>
         </div>
-    </header>
+        <p><strong>The Business Problem:</strong> Traditional entry-level salary determination is highly manual and vulnerable to internal equity disparities.</p>
+        <p><strong>The Solution:</strong> Engineered a Random Forest predictive model in Python to automate starting salary recommendations based on candidate attributes. Built a fully automated Power Query pipeline and an interactive Power BI dashboard featuring F-Pattern UI design and custom DAX measures for real-time market benchmarking.</p>
+        <a href="https://github.com/Afwan-Insights/AI-HR-Compensation-Engine" target="_blank" class="btn">View GitHub Repository</a>
+    </div>
 
-    <section class="py-16 px-6 bg-white border-b border-slate-200">
-        <div class="max-w-4xl mx-auto">
-            <h3 class="text-3xl font-bold text-slate-900 mb-8">Technical Arsenal</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-slate-50 p-4 rounded border border-slate-200 text-center font-semibold text-slate-700">Python (Pandas, Scikit-Learn)</div>
-                <div class="bg-slate-50 p-4 rounded border border-slate-200 text-center font-semibold text-slate-700">Power BI & DAX</div>
-                <div class="bg-slate-50 p-4 rounded border border-slate-200 text-center font-semibold text-slate-700">Advanced Excel & Power Query</div>
-                <div class="bg-slate-50 p-4 rounded border border-slate-200 text-center font-semibold text-slate-700">SQL & Relational Databases</div>
-            </div>
-            <p class="mt-6 text-sm text-slate-500 italic">Multilingual Professional: Fluent in English, Hindi, Kannada, Malayalam, and Urdu.</p>
-        </div>
-    </section>
+    <h2 class="section-title">Technical Skills</h2>
+    <ul>
+        <li><strong>Analytics & BI:</strong> Power BI, Advanced Excel (Power Query, DAX, Macros)</li>
+        <li><strong>Programming:</strong> Python (Pandas, Scikit-Learn), SQL</li>
+        <li><strong>Languages:</strong> English, Hindi, Kannada, Malayalam, Urdu</li>
+    </ul>
+</div>
 
-    <section id="projects" class="py-16 px-6 bg-slate-50">
-        <div class="max-w-4xl mx-auto">
-            <h3 class="text-3xl font-bold text-slate-900 mb-8">Featured Analytics</h3>
-            
-            <div class="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
-                <div class="p-8">
-                    <div class="flex items-center justify-between mb-4">
-                        <h4 class="text-2xl font-bold text-slate-900">AI-Driven HR Compensation Engine</h4>
-                        <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">Python | Power BI | ML</span>
-                    </div>
-                    <p class="text-slate-600 mb-6">
-                        Architected an end-to-end machine learning pipeline utilizing a Random Forest algorithm to predict entry-level starting salaries based on complex candidate variables. Designed an executive-facing Power BI dashboard utilizing custom DAX measures to dynamically track market Compa-Ratios.
-                    </p>
-                    <a href="LINK_TO_YOUR_GITHUB_HR_REPO_HERE" target="_blank" class="text-blue-600 font-bold hover:underline inline-flex items-center">
-                        View Complete Repository & Dashboard &rarr;
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center">
-        <p>&copy; 2026 Mohammed Afwan. Based in Hyderabad, India.</p>
-    </footer>
+<footer>
+    <p>Connect with me on <a href="https://www.linkedin.com/in/www.linkedin.com/in/mohammed-afwan" target="_blank" style="color:#8892B0;">LinkedIn</a></p>
+</footer>
 
 </body>
 </html>
