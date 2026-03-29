@@ -3,81 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Afwan | Data Analyst</title>
+    <title>Mohammed Afwan | Data Analyst Portfolio</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #F3F3F3;
-            color: #333;
+            background-color: #F8F9FA;
+            color: #212529;
+            line-height: 1.6;
         }
         header {
             background-color: #0A192F;
             color: white;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3em;
+            letter-spacing: 1px;
         }
         header p {
             font-size: 1.2em;
             color: #8892B0;
             max-width: 600px;
-            margin: 10px auto;
+            margin: 15px auto;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
         }
         .section-title {
             color: #0A192F;
-            border-bottom: 2px solid #0A192F;
-            padding-bottom: 5px;
-            margin-top: 40px;
+            border-bottom: 3px solid #0A192F;
+            padding-bottom: 8px;
+            margin-top: 50px;
+            font-size: 1.8em;
         }
-        .project-card {
+        .card {
             background: white;
-            padding: 25px;
+            padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            border-left: 4px solid #0A192F;
         }
-        .project-card h3 {
+        .card h3 {
             margin-top: 0;
             color: #0A192F;
+            font-size: 1.4em;
+            margin-bottom: 5px;
+        }
+        .card .subtitle {
+            color: #6C757D;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 0.95em;
         }
         .tags span {
             background: #E6F0FF;
             color: #0056D2;
-            padding: 5px 10px;
-            border-radius: 15px;
+            padding: 6px 12px;
+            border-radius: 20px;
             font-size: 0.85em;
-            margin-right: 5px;
-            font-weight: bold;
+            margin-right: 8px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
         }
         .btn {
             display: inline-block;
             background-color: #0A192F;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             text-decoration: none;
             border-radius: 5px;
             margin-top: 15px;
             font-weight: bold;
+            transition: background 0.3s;
         }
         .btn:hover {
             background-color: #112A4F;
         }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             background-color: #0A192F;
             color: white;
-            margin-top: 40px;
+            margin-top: 60px;
         }
         a { color: #0056D2; text-decoration: none; }
         a:hover { text-decoration: underline; }
@@ -87,36 +107,74 @@
 
 <header>
     <h1>Mohammed Afwan</h1>
-    <p>Data Analyst | Translating complex data into strategic business solutions using Python, SQL, and Power BI.</p>
-    <a href="mailto:afwanpathan17@gmail.com" class="btn">Contact Me</a>
+    <p>Analyst @ Deloitte USI | Hyderabad, India</p>
+    <p style="font-size: 1em; color: #ccd6f6;">Bridging the gap between raw data and executive strategy through advanced analytics, machine learning, and automated data pipelines.</p>
+    <a href="mailto:your.email@example.com" class="btn">Get In Touch</a>
 </header>
 
 <div class="container">
-    <h2 class="section-title">Professional Summary</h2>
-    <p>Data Analyst based in Hyderabad with a strong foundation in corporate operations (Deloitte, Amazon) and advanced studies in Information Technology. Proven ability to automate complex data pipelines, engineer predictive models, and design executive-facing dashboards that drive strategic decision-making.</p>
+    
+    <h2 class="section-title">Technical Portfolio</h2>
 
-    <h2 class="section-title">Featured Projects</h2>
-
-    <div class="project-card">
+    <div class="card">
         <h3>AI-Driven HR Compensation Engine</h3>
         <div class="tags">
-            <span>Python</span> <span>Power BI</span> <span>Machine Learning</span> <span>DAX</span>
+            <span>Python (Scikit-Learn)</span> <span>Power BI</span> <span>DAX</span> <span>Machine Learning</span>
         </div>
-        <p><strong>The Business Problem:</strong> Traditional entry-level salary determination is highly manual and vulnerable to internal equity disparities.</p>
-        <p><strong>The Solution:</strong> Engineered a Random Forest predictive model in Python to automate starting salary recommendations based on candidate attributes. Built a fully automated Power Query pipeline and an interactive Power BI dashboard featuring F-Pattern UI design and custom DAX measures for real-time market benchmarking.</p>
+        <p><strong>Overview:</strong> Developed an end-to-end machine learning pipeline and executive dashboard to automate and benchmark entry-level salary frameworks.</p>
+        <p><strong>Impact:</strong> Engineered a Random Forest predictive model to automate starting salary recommendations based on candidate attributes. Designed an executive-facing Power BI dashboard featuring custom DAX measures for real-time market benchmarking and Compa-Ratio tracking, enabling data-driven internal equity for HR stakeholders.</p>
         <a href="https://github.com/Afwan-Insights/AI-HR-Compensation-Engine" target="_blank" class="btn">View GitHub Repository</a>
     </div>
 
-    <h2 class="section-title">Technical Skills</h2>
-    <ul>
-        <li><strong>Analytics & BI:</strong> Power BI, Advanced Excel (Power Query, DAX, Macros)</li>
-        <li><strong>Programming:</strong> Python (Pandas, Scikit-Learn), SQL</li>
-        <li><strong>Languages:</strong> English, Hindi, Kannada, Malayalam, Urdu</li>
-    </ul>
+    <div class="card">
+        <h3>Enterprise Process Automation Engine</h3>
+        <div class="tags">
+            <span>Power Query</span> <span>Advanced Excel</span> <span>Process Engineering</span>
+        </div>
+        <p><strong>Overview:</strong> Architected a streamlined ETL (Extract, Transform, Load) solution to overhaul a highly manual, time-intensive corporate reporting task.</p>
+        <p><strong>Impact:</strong> Deployed a customized Power Query automation script that successfully reduced processing time from 25 minutes down to 5-7 minutes per cycle. Designed and scripted the presentation of this efficiency gain directly to senior management, demonstrating clear ROI on analytical process improvement.</p>
+    </div>
+
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="card">
+        <h3>Analyst</h3>
+        <div class="subtitle">Deloitte USI | Hyderabad, India</div>
+        <p>Leveraging advanced analytical tools to process complex datasets, optimize operational workflows, and deliver actionable business intelligence for enterprise-scale operations.</p>
+    </div>
+
+    <div class="card">
+        <h3>Content Operations Specialist</h3>
+        <div class="subtitle">Amazon | Bangalore, India | June 2022 – Sept 2024</div>
+        <p>Managed high-volume content operations and data integrity, ensuring strict adherence to quality metrics and contributing to cross-functional operational efficiency within a fast-paced corporate environment.</p>
+    </div>
+
+    <h2 class="section-title">Education & Skills</h2>
+    
+    <div class="grid-2">
+        <div class="card" style="border-left: none; border-top: 4px solid #0A192F;">
+            <h3>Academic Background</h3>
+            <ul>
+                <li><strong>Post-Graduation in Information Technology</strong><br>Birla Institute of Management Technology</li>
+                <li><strong>Bachelor of Commerce</strong><br>Mangalore University</li>
+            </ul>
+        </div>
+        
+        <div class="card" style="border-left: none; border-top: 4px solid #0A192F;">
+            <h3>Core Competencies</h3>
+            <ul>
+                <li><strong>Tools & Languages:</strong> Python, SQL, Power BI, Advanced Excel (Power Query, DAX).</li>
+                <li><strong>Domains:</strong> Data Automation, Machine Learning, Business Intelligence, Strategy Presentation.</li>
+                <li><strong>Linguistic Proficiency:</strong> English, Hindi, Kannada, Malayalam, Urdu.</li>
+            </ul>
+        </div>
+    </div>
+
 </div>
 
 <footer>
-    <p>Connect with me on <a href="https://www.linkedin.com/in/www.linkedin.com/in/mohammed-afwan" target="_blank" style="color:#8892B0;">LinkedIn</a></p>
+    <p>Connect with me on <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-URL" target="_blank" style="color:#8892B0; font-weight: bold;">LinkedIn</a></p>
+    <p style="font-size: 0.8em; color: #6C757D;">© 2026 Mohammed Afwan</p>
 </footer>
 
 </body>
